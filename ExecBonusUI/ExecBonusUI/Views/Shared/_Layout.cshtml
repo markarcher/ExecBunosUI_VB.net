@@ -14,38 +14,77 @@
     <link href="~/css/datepicker.css" rel="stylesheet" type="text/css">
     <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css">
 
-
     <!--dataTables-->
     <link rel="stylesheet" type="text/css" href="~/Content/DataTables/css/jquery.dataTables.css">
     <link rel="stylesheet" type="text/css" href="~/Content/DataTables/css/jquery.dataTables_themeroller.css">
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" charset="utf8" src="~/Scripts/DataTables/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="~/js/jquery.highlight.js"></script>
+    <!--login-->
+    <link rel="stylesheet" type="text/css" href="~/css/loginCss.css">
 
-
+    <script type="text/javascript">
+        function showHeader() {
+            var elem = document.getElementById('headerHomeLinks');
+            elem.style.visibility = 'visible';
+        }
+    </script>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+   
+
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", null, new { @class = "navbar-brand" })
+                <a class="navbar-brand" href="/Person/Home">IMG</a>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                </ul>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div id="headerHomeLinks" >
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Executive Bonus <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/Person/PolicyMaster">Executive Policy Master</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="/Person/ExecBonus">Bonus Pooling</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Investments <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">blahhhh</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">blallblahhh</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div id="userPosition">
+                        <p class="nav navbar-nav navbar-right">user</p>
+                    </div>
+
+                </div>
             </div>
         </div>
-    </div>
+      
+    </nav>
 
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - IMG Total Financial Solutions</p>
         </footer>
     </div>
 
@@ -65,8 +104,9 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
-            $('#example').DataTable();
+            $('#myTable').DataTable();
         });
     </script>
+   
 </body>
 </html>

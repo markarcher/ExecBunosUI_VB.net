@@ -45,6 +45,7 @@ html {
 
 body {
   margin: 0;
+
 }
 
 a {
@@ -301,13 +302,20 @@ html {
   font-size: 62.5%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
+/*html background*/
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #eeeeee
+;
+ 
+  /*background: url('backgroundImageIMG.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;*/
 }
 
 input,
@@ -4700,10 +4708,10 @@ textarea.input-group-sm > .input-group-btn > .btn {
     margin-right: 0;
   }
 }
-
+/*Changed background color of navbar border*/
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  background-color: #cdcdcd;
+  border-color: #9c9c9c;
 }
 
 .navbar-default .navbar-brand {
@@ -4717,11 +4725,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default .navbar-text {
-  color: #777777;
+  color: #000080;
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #777777;
+  color: #000080;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
@@ -4799,10 +4807,10 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-link:hover {
   color: #333333;
 }
-
+/*header color changed*/
 .navbar-inverse {
-  background-color: #222222;
-  border-color: #080808;
+  background-color:  #0004fb;
+  border-color: #376cf1;
 }
 
 .navbar-inverse .navbar-brand {
@@ -4858,7 +4866,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
-  border-color: #101010;
+  border-color: #2abaca;
 }
 
 .navbar-inverse .navbar-nav > .open > a,
@@ -4873,7 +4881,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
     border-color: #080808;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
-    background-color: #080808;
+    background-color: #2abaca;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: #999999;

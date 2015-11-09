@@ -16,6 +16,21 @@ namespace ExecBonusUI.Controllers
             return View();
         }
 
+        public ActionResult Home()
+        {
+            return View();
+        }
+
+        public ActionResult MainMenu()
+        {
+            return View();
+        }
+
+        public ActionResult PolicyMaster()
+        {
+            return View();
+        }
+
         public ActionResult ExecBonus()
         {
             DateTime d1 = DateTime.Now;
