@@ -50,4 +50,37 @@
             }
         </tbody>
     </table>
+   @using (Html.BeginForm("ActionMethodName","Person"))
+{
+ 
+
+ <input class="button" id="submit" type="submit" value="Submit" />
+
+}
+    <button id="button">delete Row</button>
 </body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var table = $('#myTable').DataTable();
+
+        $('#myTable tbody').on('click', 'tr', function () {
+            if ($(this).hasClass('selected')) {
+                $(this).removeClass('selected');
+            }
+            else {
+                table.$('tr.selected').removeClass('selected');
+                $(this).addClass('selected');
+            }
+        });
+
+        $('#button').click(function () {
+            table.row('.selected').remove().draw(false);
+            
+        });
+
+        $('#myTable tbody').on('click', 'tr', function () {
+            var aData = table.row(this).data();
+            alert(aData[1] +" "+ aData[2]);
+        });
+    });
+</script>

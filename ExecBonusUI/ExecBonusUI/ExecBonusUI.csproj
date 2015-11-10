@@ -201,7 +201,6 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="images\imgAdvertisement.png" />
     <Content Include="images\IMGlogo.png" />
-    <Content Include="js\jquery.highlight.js" />
     <Content Include="js\Search.js" />
     <Content Include="Scripts\bootstrap-datepicker.js" />
     <Content Include="Scripts\bootstrap-datepicker.min.js" />
