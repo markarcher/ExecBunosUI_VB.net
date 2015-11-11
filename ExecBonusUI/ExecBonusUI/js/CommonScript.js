@@ -37,9 +37,6 @@ $(document).ready(function () {
 
     $('#myTable tbody').on('click', 'tr', function () {
         var aData = table.row(this).data();
-        $.post("/Person/AgentDetails", { name: 'Deepak' }, function (data) {
-        });  
-      
         window.location.replace("/Person/Agent?Id=" + aData[0]);     
     });
 });

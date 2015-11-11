@@ -60,14 +60,6 @@ namespace ExecBonusUI.Controllers
             return View();
         }
 
-        public ActionResult ActionMethodName(FormCollection collection)
-        {
-            
-           
-            return RedirectToAction("Index");
-        }
-
-
         public ActionResult AgentDetails(int id)
         {  
             DateTime d1 = DateTime.Now;

@@ -309,13 +309,6 @@ body {
   line-height: 1.428571429;
   color: #333333;
   background-color: #eeeeee;
- 
-   background: url('fadedBackground.png');
-  -webkit-background-size: 502px 480px;
-  -moz-background-size:502px 480px;
-  -o-background-size: 502px 480px;
-  background-size: 502px 480px;
-  background-attachment: fixed ;
 }
 
 input,
