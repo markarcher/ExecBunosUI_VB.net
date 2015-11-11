@@ -308,14 +308,14 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
-  background-color: #eeeeee
-;
+  background-color: #eeeeee;
  
-  /*background: url('backgroundImageIMG.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;*/
+   background: url('fadedBackground.png');
+  -webkit-background-size: 502px 480px;
+  -moz-background-size:502px 480px;
+  -o-background-size: 502px 480px;
+  background-size: 502px 480px;
+  background-attachment: fixed ;
 }
 
 input,

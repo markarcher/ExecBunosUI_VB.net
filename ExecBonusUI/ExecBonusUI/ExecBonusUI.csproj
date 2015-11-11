@@ -187,10 +187,12 @@
     <Content Include="Content\DataTables\images\sort_desc.png" />
     <Content Include="Content\DataTables\images\sort_desc_disabled.png" />
     <Content Include="Content\DataTables\swf\flashExport.swf" />
+    <Content Include="Content\fadedBackground.png" />
     <Content Include="css\datepicker.css" />
     <Content Include="css\jquery.dataTables.min.css" />
     <Content Include="css\loginCss.css" />
     <Content Include="css\MyStyles.css" />
+    <Content Include="css\theme.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -199,8 +201,10 @@
     <Content Include="Content\DataTables\css\mixins.scss" />
     <Content Include="Content\DataTables\css\common.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="images\imgAdvertisement.png" />
     <Content Include="images\IMGlogo.png" />
+    <Content Include="Content\imgOfficialPageBackground.png" />
+    <Content Include="images\IMG_logo.png" />
+    <Content Include="js\CommonScript.js" />
     <Content Include="js\Search.js" />
     <Content Include="Scripts\bootstrap-datepicker.js" />
     <Content Include="Scripts\bootstrap-datepicker.min.js" />
@@ -344,6 +348,8 @@
     <Content Include="Views\Person\Login.cshtml" />
     <Content Include="Views\Person\PolicyMaster.cshtml" />
     <Content Include="Views\Person\Home.cshtml" />
+    <Content Include="Views\Person\AgentDetails.cshtml" />
+    <Content Include="Views\Person\Agent.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

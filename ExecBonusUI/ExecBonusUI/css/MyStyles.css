@@ -1,10 +1,13 @@
-﻿#myTable{
+﻿
+#myTable{
     width: 100%;
 }
 
 div.dataTables_length {
     float: left;
     background-color: #608dbd;
+    /*position: absolute;
+    left: 500px;*/
 }
 
  
@@ -56,10 +59,6 @@ div.dataTables_info {
 }
 
 
-/*#headerHomeLinks{
-    visibility: hidden;
-}*/
-
 #IMGlogo{
     position:relative; 
     right: 50px;
@@ -83,4 +82,9 @@ div.dataTables_info {
     position: absolute; 
     top: 30px; 
     left: 540px;
+}
+
+#headerLinks{
+    margin-right: 10px;
+
 }

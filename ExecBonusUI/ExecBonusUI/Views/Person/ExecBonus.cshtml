@@ -37,7 +37,7 @@
             @foreach (var item in ViewBag.listOfPersons)
             {
                 <tr>
-                    <td>@item.ID</td>
+                    <td>@item.AgentCode</td>
 
                     <td>@item.FirstName</td>
 
@@ -50,37 +50,16 @@
             }
         </tbody>
     </table>
+
+    <div class="info">
+
+    </div>
    @using (Html.BeginForm("ActionMethodName","Person"))
 {
  
 
- <input class="button" id="submit" type="submit" value="Submit" />
+ <input class="button" id="submit" type="submit" value="Submit" /><br />
 
 }
     <button id="button">delete Row</button>
 </body>
-<script type="text/javascript">
-    $(document).ready(function () {
-        var table = $('#myTable').DataTable();
-
-        $('#myTable tbody').on('click', 'tr', function () {
-            if ($(this).hasClass('selected')) {
-                $(this).removeClass('selected');
-            }
-            else {
-                table.$('tr.selected').removeClass('selected');
-                $(this).addClass('selected');
-            }
-        });
-
-        $('#button').click(function () {
-            table.row('.selected').remove().draw(false);
-            
-        });
-
-        $('#myTable tbody').on('click', 'tr', function () {
-            var aData = table.row(this).data();
-            alert(aData[1] +" "+ aData[2]);
-        });
-    });
-</script>
