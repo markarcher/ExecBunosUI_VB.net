@@ -7,48 +7,70 @@
 
 <body>
 
-    <div id="datePickerPosition">
-        <div class="container">
-            <div class="hero-unit">
-                <div class="input-daterange" id="datepicker" data-date-format="yyyy-mm-dd">
-                    <p>
-                        Dates from:
-                        <input type="text" class="input-small" name="start" />
-                        <span id="datePickerSpan" style="vertical-align: top;  height:20px; color:blue">to</span>
-                        <input type="text" class="input-small" name="end" />
-                        <button type="button" class="btn btn-primary">Search Date</button>
-                    </p>
-                </div>
+
+       
+    @*<div class="row">
+        <div class="col-md-12">
+            <div class="input-daterange" id="datepicker" data-date-format="yyyy-mm-dd">
+               
+                    Dates from:
+                    <input type="text" class="input-small" name="start" />
+                    <span id="datePickerSpan" style="vertical-align: top;  height:20px; color:blue">to</span>
+                    <input type="text" class="input-small" name="end" />
+                    <button type="button" class="btn btn-primary">Search Date</button>
+                </p>
             </div>
         </div>
+    </div>*@
+
+    <div class="row l-p-bottom l-p-top">
+        <div class="col-md-12">
+            <form class="form-inline">
+                <div class="input-daterange" id="datepicker" data-date-format="yyyy-mm-dd">
+                    <div class="form-group">
+                        <label for="start">Dates from:</label>
+                        <input type="text" class="form-control" id="start" name="start">
+                    </div>
+                    <div class="form-group">
+                        <label for="end">To</label>
+                        <input type="email" class="form-control" id="end" name="end">
+                    </div>
+
+                    <button type="button" class="btn btn-primary">Search Date</button>
+                </div>
+            </form>
+        </div>
     </div>
+    <div class="row l-p-bottom l-p-top" >
+        <div class="col-md-12">
+            <table id="myTable" class="display" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Address</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in ViewBag.listOfPersons)
+                    {
+                        <tr>
+                            <td>@item.AgentCode</td>
 
-    <table id="myTable" class="display" cellspacing="0" >
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Address</th>
-                <th>Date</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in ViewBag.listOfPersons)
-            {
-                <tr>
-                    <td>@item.AgentCode</td>
+                            <td>@item.FirstName</td>
 
-                    <td>@item.FirstName</td>
+                            <td>@item.LastName</td>
 
-                    <td>@item.LastName</td>
+                            <td>@item.Address</td>
 
-                    <td>@item.Address</td>
-
-                    <td>@item.Date</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-    <button id="button">delete Row</button>
+                            <td>@item.Date</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+        <button id="button">delete Row</button>
 </body>

@@ -8,12 +8,11 @@
     <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css">
 
    <!--new Theme for navbar-->
-    <link href="~/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-    <link href="~/css/theme.css" rel="stylesheet" type="text/css" />
-
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>  
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" /> 
     <link href="~/css/MyStyles.css" rel="stylesheet" type="text/css" />
     <script src="~/js/Search.js"></script>
+    <link href="~/css/theme.css" rel="stylesheet" type="text/css" />
     <!--datepicker-->
     <link href="~/css/datepicker.css" rel="stylesheet" type="text/css">
    
@@ -67,7 +66,7 @@
                         <li><a href="/Person/Home"><i class="fa fa-home"></i> Home</a></li>
 
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Executive Bonus <span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gift"></i> Executive Bonus <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="/Person/PolicyMaster">Executive Policy Master</a></li>
                                 <li role="separator" class="divider"></li>
@@ -75,7 +74,7 @@
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Investments <span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-line-chart"></i> Investments <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">blahhhh</a></li>
                                 <li role="separator" class="divider"></li>
@@ -93,11 +92,11 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - IMG Total Financial Solutions</p>
-        </footer>
-    </div>
 
+    </div>
+    <footer>
+        <p>&copy; @DateTime.Now.Year - IMG Total Financial Solutions</p>
+    </footer>
     <script src="~/Scripts/bootstrap.min.js"></script>
     <script src="~/Scripts/bootstrap-datepicker.js"></script>
    
