@@ -63,8 +63,8 @@ div.dataTables_info {
     top: 0;
 }
 
-#backgroungImg{
-    width:680px;
+#backgroundLoginImg{
+    width:800px;
     height:450px; 
     position: relative; 
     top: 0;
@@ -78,11 +78,25 @@ div.dataTables_info {
 
 #loginPosition{
     position: absolute; 
-    top: 30px; 
-    left: 540px;
+    top: 40px; 
+    left: 600px;
 }
 
 #headerLinks{
     margin-right: 10px;
 
 }
+
+
+.bs-agent{
+    	margin: 20px;
+    }
+
+#footer{
+
+        bottom: -50px;
+        height: 50px;
+        left: 0;
+        position: absolute;
+        right: 0;
+       }

@@ -2,8 +2,8 @@
     var elem = document.getElementById('headerLinks');
     elem.style.visibility = 'hidden';
 
-    //var elem1 = document.getElementById('homePageLink');
-    //elem1.removeAttribute('href');
+    var elem1 = document.getElementById('homePageLink');
+    elem1.removeAttribute('href');
 }
 
 $(document).ready(function () {
@@ -39,4 +39,5 @@ $(document).ready(function () {
         var aData = table.row(this).data();
         window.location.replace("/Person/Agent?Id=" + aData[0]);     
     });
+
 });
